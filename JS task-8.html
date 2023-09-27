@@ -1,0 +1,170 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Your existing styles here... */
+        
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background-color: lightpink; /* Light pink background color */
+        }
+
+        .form-field {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-field label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .form-field input[type="text"],
+        .form-field input[type="email"],
+        .form-field input[type="password"],
+        .form-field input[type="number"],
+        .form-field input[type="tel"],
+        .form-field textarea,
+        .form-field select {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-field input[type="checkbox"],
+        .form-field input[type="radio"] {
+            margin-right: 5px;
+        }
+        button[type="submit"] {
+            background-color: red;
+            color: white; /* Text color */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the button */
+        button[type="submit"]:hover {
+            background-color: darkred; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <div class="form-container">
+            <form>
+                <div class="form-field">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <span class="rating">Poor</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <span class="rating">Poor</span>
+                </div>
+
+                <div class="form-field">
+                <label for="Email"><h4>Email:</h4></label>
+                <input type="email" id="email" name="Email">
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="pwd"><h4>Password:</h4></label>
+                <input type="password" id="pwd" name="password">
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="Re pwd"><h4>Re-enter password:</h4></label>
+                <input type="password" id="Re pwd" name="Re-enter password">
+                <span class="rating">Poor or MISMATCH</span>
+            </div>
+           
+            <div class="form-field">
+                <label for="gender"><h4>Gender:</h4></label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+                
+            </div>
+            <div class="form-field">
+                <label for="age"><h4>Age:</h4></label>
+                <input type="number" id="age" name="age">
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="pn"><h4>Phone number:</h4></label>
+                <input type="tel" id="pn" name="Phone number">
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="address"><h4>Address:</h4></label>
+                <textarea id="address" name="address" rows="4"></textarea>
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="state"><h4>State:</h4></label>
+                <input type="text" id="state" name="state">
+                <span class="rating">Poor</span>
+            </div>
+            <div class="form-field">
+                <label for="country"><h4>Country:</h4></label>
+                <select id="country">
+                    <option value="Country">Choose your Country</option>
+                    <option value="India">India</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+                
+            </div>
+
+                <div class="form-field">
+                    <label for="languages">Languages Known:</label>
+                    <input type="checkbox" id="english" name="english" value="English" checked>
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" name="kannada" value="Kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="hindi" name="hindi" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" name="telugu" value="Telugu">
+                    <label for="telugu">Telugu</label>
+                    
+                </div>
+
+                <div class="form-field">
+                    <label>
+                        <input type="checkbox" checked> Hereby I declare all the given details are true
+                    </label>
+                </div>
+
+                <div class="form-field">
+                    Log in to <a href="https://www.ethnus.com" target="_Ethnus" class="link">Ethnus</a> website
+                </div>
+
+                <!-- Add other form fields as needed... -->
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

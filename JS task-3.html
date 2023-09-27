@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+        <label for="i1">1st number:</label>
+        <input type="text" id="i1" placeholder="Enter first number"/>
+    </div><br>
+    <div>
+        <label for="i2">2nd number:</label>
+        <input type="text" id="i2" placeholder="Enter second number"/>
+    </div><br>
+    <div>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="Divide()">Divide</button>
+    </div>
+    <div>
+        <p>The Result is: <span id="i3"></span></p>
+    </div>
+
+    <script>
+        function multiply()
+        {
+            var i1=document.getElementById("i1").value;
+            var a=Number.parseInt(i1);
+            var i2=document.getElementById("i2").value;
+            var b=Number.parseInt(i2);
+            var prod=a*b;
+           
+            document.getElementById("i3").textContent = prod;
+           
+        }
+        function Divide()
+        {
+            var i1=document.getElementById("i1").value;
+            var a=Number.parseInt(i1);
+            var i2=document.getElementById("i2").value;
+            var b=Number.parseInt(i2);
+            var div=a/b;
+            document.getElementById("i3").textContent = div;
+        }
+
+    </script>
+</body>
+</html>
